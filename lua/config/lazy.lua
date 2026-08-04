@@ -1,3 +1,12 @@
+-- Network proxy for lazy.nvim, Mason, Treesitter and external tools.
+local proxy = "http://127.0.0.1:7090"
+
+vim.env.HTTP_PROXY = proxy
+vim.env.HTTPS_PROXY = proxy
+vim.env.http_proxy = proxy
+vim.env.https_proxy = proxy
+vim.env.NO_PROXY = "localhost,127.0.0.1,::1"
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
