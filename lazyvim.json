@@ -5,7 +5,8 @@
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.toml",
-    "lazyvim.plugins.extras.lang.docker"
+    "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.nix"
   ],
   "install_version": 8,
   "news": {
